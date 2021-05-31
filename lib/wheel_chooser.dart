@@ -3,20 +3,20 @@ library wheel_chooser;
 import 'package:flutter/widgets.dart';
 
 class WheelChooser extends StatefulWidget {
-  final TextStyle selectTextStyle;
-  final TextStyle unSelectTextStyle;
-  final Function(dynamic) onValueChanged;
-  final List<dynamic> datas;
-  final int startPosition;
-  final double itemSize;
-  final double squeeze;
-  final double magnification;
-  final double perspective;
-  final double listHeight;
-  final double listWidth;
-  final List<Widget> children;
-  final bool horizontal;
-  final bool isInfinite;
+  final TextStyle? selectTextStyle;
+  final TextStyle? unSelectTextStyle;
+  final Function(dynamic)? onValueChanged;
+  final List<dynamic>? datas;
+  final int? startPosition;
+  final double? itemSize;
+  final double? squeeze;
+  final double? magnification;
+  final double? perspective;
+  final double? listHeight;
+  final double? listWidth;
+  final List<Widget>? children;
+  final bool? horizontal;
+  final bool? isInfinite;
   static const double _defaultItemSize = 48.0;
 
   WheelChooser({
@@ -109,8 +109,8 @@ class WheelChooser extends StatefulWidget {
 }
 
 class _WheelChooserState extends State<WheelChooser> {
-  FixedExtentScrollController fixedExtentScrollController;
-  int currentPosition;
+  FixedExtentScrollController? fixedExtentScrollController;
+  int? currentPosition;
 
   @override
   void initState() {
